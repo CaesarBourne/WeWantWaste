@@ -24,19 +24,19 @@ const OrderStepper: React.FC<OrderStepperProps> = ({ steps }) => {
               const Icon = step.icon;
 
               const stepCircleClasses = cn(
-                "h-10 w-10 rounded-full flex items-center justify-center mr-2 transition-all p-2",
+                "h-10 w-10 cursor-pointer rounded-full flex items-center justify-center mr-2 transition-all p-2",
                 step.completed
                   ? "bg-waste-green text-white dark:bg-waste-light-green dark:text-gray-900"
                   : step.current
                   ? "bg-waste-light-gray text-waste-dark-blue border border-waste-green dark:bg-gray-700 dark:text-waste-light-green dark:border-waste-light-green"
-                  : "bg-waste-light-gray text-waste-gray dark:bg-gray-700 dark:text-gray-400"
+                  : "bg-waste-light-gray text-waste-gray dark:bg-gray-700 dark:text-gray-400 cursor-not-allowed"
               );
 
               const stepTextClasses = cn(
-                "text-sm text-nowrap",
+                "text-sm text-nowrap cursor-pointer",
                 step.current
                   ? "text-waste-dark-blue dark:text-waste-light-green"
-                  : "text-waste-gray dark:text-gray-400"
+                  : "text-waste-gray dark:text-gray-400 cursor-not-allowed"
               );
 
               const chevronColor = "h-4 w-4 text-waste-gray dark:text-gray-500";
