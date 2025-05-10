@@ -39,6 +39,16 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Fro my own colors */
+  --color-waste-green: #4caf50;
+  --color-waste-light-green: #9bc34a;
+  --color-waste-dark-green: #2e7d32;
+  --color-waste-blue: #2196f3;
+  --color-waste-light-blue: #03a9f4;
+  --color-waste-dark-blue: #0d47a1;
+  --color-waste-gray: #607d8b;
+  --color-waste-light-gray: #eceff1;
 }
 
 :root {
@@ -108,13 +118,34 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* Fro my own colors- darkmode */
+  --color-waste-green: #388e3c;
+  --color-waste-light-green: #689f38;
+  --color-waste-dark-green: #1b5e20;
+  --color-waste-blue: #1976d2;
+  --color-waste-light-blue: #0288d1;
+  --color-waste-dark-blue: #0d47a1;
+  --color-waste-gray: #455a64;
+  --color-waste-light-gray: #cfd8dc;
 }
 
 @layer base {
+  :root {
+    --border: 214.3 31.8% 91.4%;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .skip-badge {
+    @apply inline-block px-3 py-1.5 rounded-full 
+      bg-waste-green/10 text-waste-dark-green 
+      dark:bg-waste-light-green/20 dark:text-waste-light-green
+      font-medium text-sm;
   }
 }

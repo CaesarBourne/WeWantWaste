@@ -1,0 +1,55 @@
+import type { SkipOption } from "@/services/skipService";
+
+// Mock data for testing when API is not available
+export const mockSkipOptions: SkipOption[] = [
+  {
+    id: 1,
+    name: "4 Yard Skip",
+    size: 4,
+    hire_period_days: 14,
+    price: 333.6,
+    allowed_on_road: true,
+    allows_heavy_waste: true,
+    imageUrl: "/skips/4yard.png",
+  },
+  {
+    id: 2,
+    name: "6 Yard Skip",
+    size: 6,
+    hire_period_days: 14,
+    price: 366.0,
+    allowed_on_road: true,
+    allows_heavy_waste: true,
+    imageUrl: "/skips/6yard.png",
+  },
+  {
+    id: 3,
+    name: "8 Yard Skip",
+    size: 8,
+    hire_period_days: 14,
+    price: 450.0,
+    allowed_on_road: true,
+    allows_heavy_waste: true,
+    imageUrl: "/skips/8yard.png",
+  },
+  {
+    id: 4,
+    name: "10 Yard Skip",
+    size: 10,
+    hire_period_days: 14,
+    price: 480.0,
+    allowed_on_road: false,
+    allows_heavy_waste: false,
+    imageUrl: "/skips/10yard.png",
+  },
+  {
+    id: 5,
+    name: "12 Yard Skip",
+    size: 12,
+    hire_period_days: 14,
+    price: 526.8,
+    allowed_on_road: false,
+    allows_heavy_waste: false,
+    imageUrl: "/skips/12yard.png",
+  },
+];
