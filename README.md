@@ -202,6 +202,8 @@ You can also run the project on sandbox with the link below
 
 **Sand Box** : - https://codesandbox.io/p/github/CaesarBourne/WeWantWaste/main
 
+**Figma design link** - https://www.figma.com/design/uJn5mdsa14lgd4fbgiBKjh/we-want-waste?node-id=0-1&t=vQAFsPrhxxjkPWlc-1
+
 ---
 
 ## Development Approach
